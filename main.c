@@ -26,7 +26,7 @@ int main() {
     if (strcmp(type, "circle") == 0) {
       if ((sscanf(line, "circle(%f %f, %f)", &c1.point.x, &c1.point.y,
                   &c1.number)) == 3)
-        printf("circle(%f %f  %f) \n", c1.point.x, c1.point.y, c1.number);
+        printf("circle(%f %f, %f) \n", c1.point.x, c1.point.y, c1.number);
       else
         printf("incorrect data of points of circle. Expected NUM NUM, NUM \n");
     } else
