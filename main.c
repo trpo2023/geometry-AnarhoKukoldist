@@ -15,10 +15,10 @@ struct WKTcircle {
 int main() {
 	FILE *myfile;
 	myfile = fopen("values.txt", "r");
+	if (!myfile) {puts ("Файл не обнаружен. Работа невозможна."); return 0;}
 	char *type;
 	char line[100];
 	char line1[100];
-
 	struct WKTcircle c1;
 	while ((fgets(line, 100, myfile)) != 0) {
 		strcpy(line1, line);
